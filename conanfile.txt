@@ -1,0 +1,12 @@
+[requires]
+boost/1.81.0
+gtest/1.12.1
+
+[options]
+# Local builds should statically link boost to avoid having to set LD_LIBRARY_PATH
+# Invoke cmake with -DUSE_STATIC_BOOST=1
+boost:shared=False
+
+[generators]
+CMakeToolchain
+CMakeDeps

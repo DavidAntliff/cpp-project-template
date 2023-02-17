@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSharedSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DBUILD_TESTS=1 -DUSE_STATIC_BOOST=1" />
+      <configuration PROFILE_NAME="Release" ENABLED="true" CONFIG_NAME="Release" GENERATION_OPTIONS="-DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DBUILD_TESTS=1 -DUSE_STATIC_BOOST=1" />
+    </configurations>
+  </component>
+</project>
