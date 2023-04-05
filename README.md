@@ -12,11 +12,19 @@ Includes support for:
 
  * C++20 (can be changed)
  * Core built as library
- * Boost (via Conan), including Boost::Log
- * GTest (via Conan)
+ * Boost 1.81.0 (via Conan), including Boost::Log
+ * GTest 1.12.1 (via Conan)
  * Debug & Release configurations
  * CLion support
  * Pthreads
+
+## Renaming
+
+To convert to your new project name:
+
+ * Search/replace the project name `cpp-project-template`
+ * Search/replace the namespace `cpt`
+ * Search/replace the header guards `CPT_`
 
 ## Building
 
@@ -62,6 +70,7 @@ $ conan install -if $BUILD_DIR . --build=missing -s build_type=Release -pr:b=gcc
 
 ### CMake
 
+Prepare:
 ```
 $ cmake .. \
     -B $BUILD_DIR \
@@ -71,6 +80,7 @@ $ cmake .. \
     -DUSE_STATIC_BOOST=1
 ```
 
+Build:
 ```
 $ cmake \
     --build $BUILD_DIR \
